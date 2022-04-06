@@ -13,37 +13,37 @@
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  </nav>
-  <div class="main-nav__wrapper">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a href="#">
-          Главная
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">
-          Фото и видео
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">
-          Форма отзыва
-        </a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">
-          HTML Academy
-        </a>
-      </li>
-    </ul>
-    <div class="main-nav__сlose-button">
-      <svg class="user-list__сlose-button" width="23" height="23">
-        <use xlink:href="img/close-button.svg"></use>
-      </svg>
-      <span class="visually-hidden">Закрыть меню</span>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+      <div class="main-nav__сlose-button">
+        <svg class="main-nav__img" width="23" height="23">
+          <use xlink:href="img/close-button.svg"></use>
+        </svg>
+        <span class="visually-hidden">Закрыть меню</span>
+      </div>
     </div>
-  </div>
+  </nav>
 </header>
 <main class="main-container">
   <section class="description-site">
@@ -64,15 +64,15 @@
           <h3 class="advantages__title">Настоящий городок</h3>
           <p class="advantages__number">№1</p>
           <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+          <dl class="attraction">
+            <dt class="attraction__term">Жилье</dt>
+            <dd class="attraction__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+            <dt class="attraction__term">Еда</dt>
+            <dd class="attraction__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
+            <dt class="attraction__term">Сувениры</dt>
+            <dd class="attraction__description">Не только китайского, но и местного производства!</dd>
+          </dl>
         </li>
-        <dl class="attraction">
-          <dt class="attraction__term">Жилье</dt>
-          <dd class="attraction__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-          <dt class="attraction__term">Еда</dt>
-          <dd class="attraction__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
-          <dt class="attraction__term">Сувениры</dt>
-          <dd class="attraction__description">Не только китайского, но и местного производства!</dd>
-        </dl>
         <li class="advantages__item">
           <h3 class="advantages__title">Там есть мост дьявола</h3>
           <p class="advantages__number">№2</p>
@@ -126,10 +126,9 @@
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo" src="img/htmlacademy-logo.svg"/>
+        <img class="copyright__logo" src="img/htmlacademy-logo.svg" alt="logo"/>
       </a>
     </div>
-  </div>
   </div>
 </footer>
 </body>
