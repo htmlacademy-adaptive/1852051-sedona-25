@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page-form">
 <head>
   <link rel="stylesheet" type="text/css" href="less/font.less"/>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/index.js"></script>
 </head>
-<body>
+<body class="page-form__body">
 <header class="form-header">
   <a class="form-header__logo">
     <img class="form-header__logo-image" src="img/logotype-sedona.svg" width="185" height="96" alt="Sedona city">
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="contact-info">
+      <fieldset class="main-form__contact contact-info">
         <legend class="contact-info__title">Контактная информация</legend>
         <ul class="contact-info__list">
           <li class="contact-info__item">
@@ -81,7 +81,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback-review">
+      <fieldset class="main-form__feedback-review feedback-review">
         <legend class="feedback-review__title">Ваше общее впечатление:</legend>
         <ul class="feedback-review__list">
           <li class="feedback-review__item">
@@ -98,7 +98,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="sights">
+      <fieldset class="main-nav__sights sights">
         <legend class="sights__title">Посещенные достопримечательности:</legend>
         <ul class="sights__list">
           <li class="sights__item">
@@ -119,8 +119,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="state description">
-        <input type="text" class="state description__text" placeholder="Опишите подродно все свои восторги">
+      <fieldset class="main-nav__description state-description">
+        <input type="text" class="state-description__text" placeholder="Опишите подродно все свои восторги">
       </fieldset>
       <button class="main-form__submit button-page-form" type="submit"></button>
     </form>
