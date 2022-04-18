@@ -1,5 +1,33 @@
 .attraction {
   list-style: none;
+  padding: 0;
+}
+
+.attraction__item {
+  text-align: initial;
+}
+
+.attraction__description {
+  margin-left: 50px;
+}
+
+.attraction__term {
+  margin-left: 50px;
+}
+
+.attraction__item:first-child {
+  background-image: url("../img/mobile-img/home.svg");
+  background-repeat: no-repeat;
+}
+
+.attraction__item:nth-child(2) {
+  background-image: url("../img/mobile-img/burger.svg");
+  background-repeat: no-repeat;
+}
+
+.attraction__item:nth-child(3) {
+  background-image: url("../img/mobile-img/gift.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -7,5 +35,34 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .attraction__item {
+    width: 256px;
+    background-image: url("../img/mobile-img/home-mobile.svg");
+    background-position: top;
+    text-align: center;
+  }
+
+  .attraction__item:first-child {
+    background-image: url("../img/tablet-img/home.svg");
+  }
+
+  .attraction__item:nth-child(2) {
+    background-image: url("../img/tablet-img/burger.svg");
+  }
+
+  .attraction__item:nth-child(3) {
+    background-image: url("../img/tablet-img/gift.svg");
+  }
+
+  .attraction__term {
+    display: block;
+    margin-top: 90px;
+    margin-left: 0;
+  }
+
+  .attraction__description {
+    margin-left: 0;
   }
 }
