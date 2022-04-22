@@ -1,0 +1,32 @@
+.site-list {
+  padding: 0;
+  margin: 0 auto;
+  height: 220px;
+  color: #ffffff;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-list__item {
+  height: 55px;
+  background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    color: #000000;
+  }
+}
