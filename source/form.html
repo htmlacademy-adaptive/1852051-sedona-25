@@ -1,138 +1,143 @@
 <!DOCTYPE html>
-<html lang="en" class="page-form">
+<html class="page" lang="ru">
 <head>
-  <link rel="stylesheet" type="text/css" href="less/font.less"/>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Form-Sedona</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/index.js"></script>
 </head>
-<body class="page-form__body">
-<header class="form-header">
-  <a class="form-header__logo">
-    <img class="form-header__logo-image" src="img/logotype-sedona.svg" width="185" height="96" alt="Sedona city">
+<body class="page__body">
+<header class="main-header">
+  <a class="main-header__logo">
+    <img class="main-header__logo-image" src="img/logotype-sedona.svg" width="185" height="96" alt="Sedona city">
   </a>
+  <button class="main-header__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <div class="main-header__wrapper-form"></div>
 </header>
-<section class="feedback">
-  <div class="feedback__wrapper">
-    <h2 class="feedback__title">
-      Оставьте свой отзыв
-    </h2>
-    <p class="feedback__text">
-      Помогите нашим отелям стать лучше! <br>
-      Оставьте отзыв о них, а также о ,<br> посещенных вами <br> достопримечательностях
-    </p>
-  </div>
-</section>
-<section class="main-form">
-  <div class="main-form__wrapper">
-    <form method="post" action="https://echo.htmlacademy.ru/">
-      <fieldset class="main-form__name name-user">
-        <legend class="name-user__title">Представьтесь</legend>
-        <ul class="name-user__list">
-          <li class="name-user__item">
-            <label for="name-user">
-              <span class="name-user__field-name">Имя*</span>
-              <input type="text" class="name-user__text" id="name-user" value="Пётр" required>
-            </label>
-          </li>
-          <li class="name-user__item">
-            <label for="surname">
-              <span class="name-user__field-name">Фамилия*</span>
-              <input type="text" class="name-user__text" id="surname" value="Пустота" required>
-            </label>
-          </li>
-          <li class="name-user__item">
-            <label for="father-name">
-              <span class="name-user__field-name">Отчество*</span>
-              <input type="text" class="name-user__text" id="father-name" value="Викторович" required>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="main-form__contact contact-info">
-        <legend class="contact-info__title">Контактная информация</legend>
-        <ul class="contact-info__list">
-          <li class="contact-info__item">
-            <label for="phone">
-              <span class="contact-info__field-name">Контактный телефон*:</span>
-              <input type="text" class="contact-info__phone" id="phone" placeholder="Введите телефон" required>
-            </label>
-            <div class="contact-info__img">
-              <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-                  fill="#010101"/>
-              </svg>
-            </div>
-          </li>
-          <li class="contact-info__item">
-            <label for="mail">
-              <span class="contact-info__field-name">Электронная почта*:</span>
-              <input type="text" class="contact-info__phone" id="mail" placeholder="Введите e-mail" required>
-            </label>
-            <div class="contact-info__img">
-              <svg aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
-                  fill="black"/>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="main-form__feedback-review feedback-review">
-        <legend class="feedback-review__title">Ваше общее впечатление:</legend>
-        <ul class="feedback-review__list">
-          <li class="feedback-review__item">
-            <input class="feedback-review__control" type="radio" id="review1" name="review-control" value="Good-review" checked>
-            <label for="review1">Скорее положительное</label>
-          </li>
-          <li class="feedback-review__item">
-            <input class="feedback-review__control" id="review2" type="radio" name="review-control" value="bad-review">
-            <label for="review2">Скорее отрицательное</label>
-          </li>
-          <li class="feedback-review__item">
-            <input class="feedback-review__control" type="radio" id="review3" name="review-control" value="indefinite-review">
-            <label for="review3">Затрудняюсь ответить</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="main-nav__sights sights">
-        <legend class="sights__title">Посещенные достопримечательности:</legend>
-        <ul class="sights__list">
-          <li class="sights__item">
-            <input type="checkbox" class="sights__control" name="Мост Дьявола" id="sights1" checked>
-            <label for="sights1">Мост Дьявола</label>
-          </li>
-          <li class="sights__item">
-            <input type="checkbox" class="sights__control" name="Гора-Колокол" id="sights2" checked>
-            <label for="sights2">Гора-Колокол</label>
-          </li>
-          <li class="sights__item">
-            <input type="checkbox" class="sights__control" name="Слайд-парк" id="sights3" checked>
-            <label for="sights3">Слайд-парк</label>
-          </li>
-          <li class="sights__item">
-            <input type="checkbox" class="sights__control" name="Красные скалы" id="sights4">
-            <label for="sights4">Красные скалы</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="main-nav__description state-description">
-        <input type="text" class="state-description__text" placeholder="Опишите подродно все свои восторги">
-      </fieldset>
-      <button class="main-form__submit button-page-form" type="submit"></button>
-    </form>
-  </div>
-</section>
+<main class="main-container">
+  <section class="feedback">
+    <div class="feedback__wrapper">
+      <h2 class="feedback__title">
+        Оставьте свой отзыв
+      </h2>
+      <p class="feedback__text">
+        Помогите нашим отелям стать лучше! <br>
+        Оставьте отзыв о них, а также о ,<br> посещенных вами <br> достопримечательностях
+      </p>
+    </div>
+  </section>
+  <section class="main-form">
+    <div class="main-form__wrapper">
+      <form method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="main-form__name name-user">
+          <legend class="name-user__title">Представьтесь</legend>
+          <ul class="name-user__list reset-list">
+            <li class="name-user__item">
+              <label for="name-user">
+                <span class="name-user__field-name">Имя*</span>
+                <input type="text" class="name-user__text" id="name-user" value="Пётр" required>
+              </label>
+            </li>
+            <li class="name-user__item">
+              <label for="surname">
+                <span class="name-user__field-name">Фамилия*</span>
+                <input type="text" class="name-user__text" id="surname" value="Пустота" required>
+              </label>
+            </li>
+            <li class="name-user__item">
+              <label for="father-name">
+                <span class="name-user__field-name">Отчество*</span>
+                <input type="text" class="name-user__text" id="father-name" value="Викторович" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="main-form__contact contact-info">
+          <legend class="contact-info__title">Контактная информация</legend>
+          <ul class="contact-info__list reset-list">
+            <li class="contact-info__item">
+              <label for="phone">
+                <span class="contact-info__field-name">Контактный телефон*:</span>
+                <input type="text" class="contact-info__phone" id="phone" placeholder="Введите телефон" required >
+              </label>
+              <div class="contact-info__img">
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+                    fill="#010101"/>
+                </svg>
+              </div>
+            </li>
+            <li class="contact-info__item">
+              <label for="mail">
+                <span class="contact-info__field-name">Электронная почта*:</span>
+                <input type="text" class="contact-info__phone" id="mail" placeholder="Введите e-mail" required>
+              </label>
+              <div class="contact-info__img">
+                <svg aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                    fill="black"/>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="main-form__feedback-review feedback-review">
+          <legend class="feedback-review__title">Ваше общее впечатление:</legend>
+          <ul class="feedback-review__list reset-list">
+            <li class="feedback-review__item">
+              <input class="feedback-review__control" type="radio" id="review1" name="review-control" value="Good-review" checked>
+              <label for="review1">Скорее положительное</label>
+            </li>
+            <li class="feedback-review__item">
+              <input class="feedback-review__control" id="review2" type="radio" name="review-control" value="bad-review">
+              <label for="review2">Скорее отрицательное</label>
+            </li>
+            <li class="feedback-review__item">
+              <input class="feedback-review__control" type="radio" id="review3" name="review-control" value="indefinite-review">
+              <label for="review3">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="main-form__sights sights">
+          <legend class="sights__title">Посещенные достопримечательности:</legend>
+          <ul class="sights__list reset-list">
+            <li class="sights__item">
+              <input type="checkbox" class="sights__control" name="Мост Дьявола" id="sights1" checked>
+              <label for="sights1">Мост Дьявола</label>
+            </li>
+            <li class="sights__item">
+              <input type="checkbox" class="sights__control" name="Гора-Колокол" id="sights2" checked>
+              <label for="sights2">Гора-Колокол</label>
+            </li>
+            <li class="sights__item">
+              <input type="checkbox" class="sights__control" name="Слайд-парк" id="sights3" checked>
+              <label for="sights3">Слайд-парк</label>
+            </li>
+            <li class="sights__item">
+              <input type="checkbox" class="sights__control" name="Красные скалы" id="sights4">
+              <label for="sights4">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="main-form__description state-description">
+          <span class="state-description__text">Опишите свои эмоции:</span>
+          <input type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги">
+        </fieldset>
+        <button class="main-form__submit button-page-form" type="submit"></button>
+      </form>
+    </div>
+  </section>
+</main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer__hash hash">
       <p class="hash__text">#visitsedona</p>
     </div>
     <div class="main-footer__social social">
-      <ul class="social__list">
+      <ul class="social__list reset-list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

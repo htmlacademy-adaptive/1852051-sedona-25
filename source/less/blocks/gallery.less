@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .gallery__item {
+    width: 324px;
+  }
+
+  .gallery__item:first-child {
+    flex-grow: 1;
+    width: 468px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
