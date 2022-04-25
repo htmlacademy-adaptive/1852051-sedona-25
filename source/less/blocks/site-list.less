@@ -1,18 +1,25 @@
 .site-list {
   padding: 0;
   margin: 0 auto;
-  height: 220px;
   color: @text-color-white;
 }
 
 .site-list__link {
   text-decoration: none;
   color: @text-color-white;
+  font-size: 18px;
+  position: relative;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .site-list__item {
   height: 55px;
-  background-color: #81b3d2;
+  background-color: @color-background;
 }
 
 @media (min-width: @tablet-width) {
