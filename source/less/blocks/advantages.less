@@ -58,18 +58,6 @@
   position: relative;
 }
 
-.advantages__list .advantages__item:nth-child(4):before,
-.advantages__list .advantages__item:nth-child(4):after {
-  content: "";
-  width: 284px;
-  height: 2px;
-  background-color: #d6d6d6;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
-}
 
 .advantages__wrapper-2 {
   display: flex;
@@ -107,6 +95,19 @@
   .advantages__wrapper-2 {
     order: 2;
   }
+
+  .advantages__list .advantages__item:nth-child(4):before,
+  .advantages__list .advantages__item:nth-child(4):after {
+    content: "";
+    width: 284px;
+    height: 2px;
+    background-color: #d6d6d6;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -119,6 +120,10 @@
   .advantages__item:first-child {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  .advantages__item:nth-child(n + 3) {
+    padding: 42px 40px 41px;
   }
 
   .advantages__item:nth-child(2) {
@@ -140,6 +145,7 @@
     background-image: url("../img/tablet-img/photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 100%;
   }
 
   .advantages__wrapper-2 {
@@ -150,5 +156,11 @@
   .advantages__wrapper-3 {
     display: grid;
     grid-template-columns: 2fr 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item:nth-child(n + 3) {
+    padding: 42px 54px 62px;
   }
 }

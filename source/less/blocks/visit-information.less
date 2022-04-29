@@ -19,4 +19,45 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-decoration: none;
+  color: @text-color-white;
+}
+
+.visit-information__button {
+  height: 58px;
+  width: 284px;
+  border: none;
+  background-color: @color-background;
+  margin-bottom: 49px;
+}
+
+.visit-information__map {
+  background-image: url("../img/mobile-img/map-mobile.jpg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+@media (min-width: @tablet-width) {
+  .visit-information__title {
+    font-size: 30px;
+  }
+
+  .visit-information__map {
+    background-image: url("../img/tablet-img/map-tablet.jpg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 768px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visit-information__map {
+    background-image: url("../img/desctop-img/map-desktop.jpg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin-bottom: 36px;
+  }
 }
