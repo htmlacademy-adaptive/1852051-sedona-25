@@ -1,0 +1,38 @@
+.feedback-review__item {
+  margin-bottom: 36px;
+}
+
+.feedback-review-control-label {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 700;
+  padding-left: 39px;
+}
+
+.feedback-review__control {
+  position: relative;
+  display: block;
+}
+
+.feedback-review__control[type="radio"]:checked + .feedback-review__control-mark::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: #333333;
+  border-radius: 50%;
+  top: 14px;
+  left: 15px;
+}
+
+.feedback-review__control-mark {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  width: 46px;
+  height: 45px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  margin-right: 16px;
+}
