@@ -110,28 +110,40 @@
           </ul>
         </fieldset>
         <fieldset class="main-form__sights sights">
-          <legend class="sights__title">Посещенные достопримечательности:</legend>
+          <legend class="sights__title">Посещенные<br/> достопримечательности:</legend>
           <ul class="sights__list reset-list">
             <li class="sights__item">
-              <input type="checkbox" class="sights__control" name="Мост Дьявола" id="sights1" checked>
-              <label for="sights1">Мост Дьявола</label>
+              <label class="sights__control">
+                <input type="checkbox" class="sights__control visually-hidden" name="Мост Дьявола" id="sights1" checked>
+                <span class="sights__control-mark"></span>
+                <span class="sights__control-label">Мост Дьявола</span>
+              </label>
             </li>
             <li class="sights__item">
-              <input type="checkbox" class="sights__control" name="Гора-Колокол" id="sights2" checked>
-              <label for="sights2">Гора-Колокол</label>
+              <label class="sights__control">
+                <input type="checkbox" class="sights__control visually-hidden" name="Гора-Колокол" id="sights2" checked>
+                <span class="sights__control-mark"></span>
+                <span class="sights__control-label">Гора-Колокол</span>
+              </label>
             </li>
             <li class="sights__item">
-              <input type="checkbox" class="sights__control" name="Слайд-парк" id="sights3" checked>
-              <label for="sights3">Слайд-парк</label>
+              <label class="sights__control">
+                <input type="checkbox" class="sights__control visually-hidden" name="Слайд-парк" id="sights3" checked>
+                <span class="sights__control-mark"></span>
+                <span class="sights__control-label">Слайд-парк</span>
+              </label>
             </li>
             <li class="sights__item">
-              <input type="checkbox" class="sights__control" name="Красные скалы" id="sights4">
-              <label for="sights4">Красные скалы</label>
+              <label class="sights__control">
+                <input type="checkbox" class="sights__control visually-hidden" name="Красные скалы" id="sights4">
+                <span class="sights__control-mark"></span>
+                <span class="sights__control-label">Красные скалы</span>
+              </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="main-form__description state-description">
-          <span class="state-description__text">Опишите свои эмоции:</span>
+          <legend class="state-description__text">Опишите свои эмоции:</legend>
           <input type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги">
         </fieldset>
         <button class="main-form__submit button-page-form" type="submit"></button>
