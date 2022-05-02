@@ -144,9 +144,12 @@
         </fieldset>
         <fieldset class="main-form__description state-description">
           <legend class="state-description__text">Опишите свои эмоции:</legend>
-          <input type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги">
+          <textarea type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="main-form__submit button-page-form" type="submit"></button>
+        <div class="main-form__wrapper-submit">
+          <button class="main-form__submit button-page-form" type="submit">Отправить отзыв</button>
+          <span class="main-form__required-fields">* - Обязательные поля</span>
+        </div>
       </form>
     </div>
   </section>
@@ -203,7 +206,7 @@
 <div class="modal-error modal-window">
   <div class="modal-error__wrapper">
     <h2 class="modal-error__bold-text">Что-то пошло не так!</h2>
-    <p class="modal-error__text">Проверьте поля, выделенные крачным. Скорее всего вы забыли их заполнить.</p>
+    <p class="modal-error__text">Проверьте поля, выделенные<br/> крачным. Скорее всего вы<br/> забыли их заполнить.</p>
     <button class="modal-error__button button-page-form">OK</button>
   </div>
 </div>

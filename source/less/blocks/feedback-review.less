@@ -1,3 +1,7 @@
+.feedback-review__list {
+  display: grid;
+}
+
 .feedback-review__item {
   margin-bottom: 36px;
 }
@@ -7,7 +11,7 @@
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
-  padding-left: 39px;
+  transform: translateX(0);
 }
 
 .feedback-review__control {
@@ -29,10 +33,9 @@
 .feedback-review__control-mark {
   position: absolute;
   top: -12px;
-  left: 20px;
+  left: 0;
   width: 46px;
   height: 45px;
-  background-color: #f2f2f2;
+  background-color: @background-form-element;
   border-radius: 50%;
-  margin-right: 16px;
 }
