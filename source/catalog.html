@@ -1,52 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" class="page-catalog">
+<html lang="en" class="page">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/index.js"></script>
   <title>Catalog Sedona</title>
 </head>
-<body class="page-catalog__body">
+<body class="page__body">
 <header class="main-header">
   <a class="main-header__logo">
     <img class="main-header__logo-image" src="img/logotype-sedona.svg" width="185" height="96" alt="Sedona city">
   </a>
-  <button class="main-header__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
-  <div class="main-header__wrapper-form"></div>
+  <div class="main-header__wrapper-form">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active-page"><a class="site-list__link" href="#">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
+        </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
-<section class="catalog-content">
+<section class="main-container">
   <div class="description-catalog">
-    <h2 class="description-catalog__title"></h2>
+    <h2 class="description-catalog__title">Фото и видео</h2>
     <p class="description-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
   </div>
   <ul class="gallery">
     <li class="gallery__item">
-      <img class="gallery__img" src="img/mobile-img/photo-1.jpg" height="280" width="280" alt="Просторы">
-      <p class="gallery__description">Народные просторы</p>
-      <p class="gallery__author">Автор фото: Борис</p>
-      <button class="gallery__button gallery__button--like"></button>
-      <span class="gallery__likes-number">1350</span>
+      <div class="gallery__wrap-img">
+        <img class="gallery__img" src="img/mobile-img/photo-11.jpg" height="280" width="280" alt="Просторы">
+      </div>
+      <div class="gallery__wrap-description-img">
+        <div class="gallery__wrap-description-text">
+          <p class="gallery__description">Народные просторы</p>
+          <p class="gallery__author">Автор фото: Борис</p>
+        </div>
+        <div class="gallery__wrap-likes">
+          <button class="gallery__button gallery__button--like"></button>
+          <span class="gallery__likes-number">1350</span>
+        </div>
+      </div>
     </li>
     <li class="gallery__item">
-      <img class="gallery__img" src="img/mobile-img/photo-2.jpg" height="280" width="280" alt="Растительность">
-      <p class="gallery__description">Местная растительность</p>
-      <p class="gallery__author">Автор фото: Сергей</p>
-      <button class="gallery__button gallery__button--like"></button>
-      <span class="gallery__likes-number">143</span>
+      <div class="gallery__wrap-img">
+        <img class="gallery__img" src="img/mobile-img/photo-2.jpg" height="280" width="280" alt="Растительность">
+      </div>
+      <div class="gallery__wrap-description-img">
+        <div class="gallery__wrap-description-text">
+          <p class="gallery__description">Местная растительность</p>
+          <p class="gallery__author">Автор фото: Сергей</p>
+        </div>
+        <div class="gallery__wrap-likes">
+          <button class="gallery__button gallery__button--like"></button>
+          <span class="gallery__likes-number">143</span>
+        </div>
+      </div>
     </li>
     <li class="gallery__item">
-      <img class="gallery__img" src="img/mobile-img/photo-3.jpg" height="280" width="280" alt="Просторы">
-      <p class="gallery__description">Местная растительность</p>
-      <p class="gallery__author">Автор фото: Петр</p>
-      <button class="gallery__button gallery__button--like"></button>
-      <span class="gallery__likes-number">96</span>
+      <div class="gallery__wrap-img">
+        <img class="gallery__img" src="img/mobile-img/photo-3.jpg" height="280" width="280" alt="Просторы">
+      </div>
+      <div class="gallery__wrap-description-img">
+        <div class="gallery__wrap-description-text">
+          <p class="gallery__description">Местная растительность</p>
+          <p class="gallery__author">Автор фото: Петр</p>
+        </div>
+        <div class="gallery__wrap-likes">
+          <button class="gallery__button gallery__button--like"></button>
+          <span class="gallery__likes-number">96</span>
+        </div>
+      </div>
     </li>
     <li class="gallery__item">
-      <img class="gallery__img" src="img/mobile-img/photo-4.jpg" height="280" width="280" alt="Мост">
-      <p class="gallery__description">Мост Дьявола</p>
-      <p class="gallery__author">Автор фото: Антон</p>
-      <button class="gallery__button gallery__button--like"></button>
-      <span class="gallery__likes-number">254</span>
+      <div class="gallery__wrap-img">
+        <img class="gallery__img" src="img/mobile-img/photo-4.jpg" height="280" width="280" alt="Мост">
+      </div>
+      <div class="gallery__wrap-description-img">
+        <div class="gallery__wrap-description-text">
+          <p class="gallery__description">Мост Дьявола</p>
+          <p class="gallery__author">Автор фото: Антон</p>
+        </div>
+        <div class="gallery__wrap-likes">
+          <button class="gallery__button gallery__button--like"></button>
+          <span class="gallery__likes-number">254</span>
+        </div>
+      </div>
     </li>
   </ul>
   <div class="presentation">
@@ -60,7 +106,7 @@
       <p class="hash__text">#visitsedona</p>
     </div>
     <div class="main-footer__social social">
-      <ul class="social__list">
+      <ul class="social__list reset-list">
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
