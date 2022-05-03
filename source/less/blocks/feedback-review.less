@@ -39,3 +39,25 @@
   background-color: @background-form-element;
   border-radius: 50%;
 }
+
+@media (min-width: @tablet-width) {
+  .feedback-review__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 58px;
+  }
+
+  .feedback-review__item {
+    width: 250px;
+    margin-right: 50px;
+  }
+
+  .feedback-review__title {
+    margin-bottom: 38px;
+  }
+
+  .feedback-review-control-label {
+    margin-left: 62px;
+  }
+}

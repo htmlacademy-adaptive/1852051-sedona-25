@@ -28,14 +28,32 @@ input[value] {
   position: relative;
 }
 
-.name-user__list::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 320px;
-  background-color: #e5e5e5;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
+@media (max-width: 720px) {
+  .name-user__list::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 320px;
+    background-color: @color-decor-line;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .name-user__list::before {
+    content: "";
+    position: absolute;
+    height: 338px;
+    width: 1px;
+    background-color: @color-decor-line;
+    right: 0;
+    top: -54px;
+  }
+
+  .name-user__item {
+    margin-right: 43px;
+  }
 }

@@ -1,0 +1,29 @@
+@media (min-width: @tablet-width) {
+  .line {
+    position: relative;
+  }
+
+  .line::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: @color-decor-line;
+    width: 100%;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+  }
+
+  .line__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .line__title {
+    width: 402px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    background-color: #ffffff;
+  }
+}

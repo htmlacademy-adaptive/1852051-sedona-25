@@ -12,3 +12,28 @@
 .feedback__text {
   margin-bottom: 53px;
 }
+
+@media (min-width: @tablet-width) {
+  .feedback__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .feedback__text br {
+    display: none;
+  }
+
+  .feedback__text {
+    margin-bottom: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__text {
+    margin-bottom: 67px;
+    width: 444px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

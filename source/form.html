@@ -43,8 +43,8 @@
   <section class="main-form">
     <div class="main-form__wrapper">
       <form method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="main-form__name name-user">
-          <legend class="name-user__title">Представьтесь</legend>
+        <div class="main-form__name name-user">
+          <div class="name-user__title form-title">Представьтесь</div>
           <ul class="name-user__list reset-list">
             <li class="name-user__item">
               <label for="name-user">
@@ -65,9 +65,9 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__contact contact-info">
-          <legend class="contact-info__title">Контактная информация</legend>
+        </div>
+        <div class="main-form__contact contact-info">
+          <div class="contact-info__title form-title">Контактная информация</div>
           <ul class="contact-info__list reset-list">
             <li class="contact-info__item">
               <label for="phone">
@@ -82,9 +82,13 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__feedback-review feedback-review">
-          <legend class="feedback-review__title">Ваше общее впечатление:</legend>
+        </div>
+        <div class="main-form__feedback-review feedback-review">
+          <div class="feedback-review__line line">
+            <div class="line__container">
+              <div class="feedback-review__title form-title line__title">Ваше общее впечатление:</div>
+            </div>
+          </div>
           <ul class="feedback-review__list reset-list">
             <li class="feedback-review__item">
               <label class="feedback-review__control">
@@ -108,9 +112,13 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__sights sights">
-          <legend class="sights__title">Посещенные<br/> достопримечательности:</legend>
+        </div>
+        <div class="main-form__sights sights">
+          <div class="sights__line line">
+            <div class="line__container">
+              <div class="sights__title form-title line__title">Посещенные<br/> достопримечательности:</div>
+            </div>
+          </div>
           <ul class="sights__list reset-list">
             <li class="sights__item">
               <label class="sights__control">
@@ -141,11 +149,11 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__description state-description">
-          <legend class="state-description__text">Опишите свои эмоции:</legend>
+        </div>
+        <div class="main-form__description state-description">
+          <div class="state-description__text form-title">Опишите свои эмоции:</div>
           <textarea type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
+        </div>
         <div class="main-form__wrapper-submit">
           <button class="main-form__submit button-page-form" type="submit">Отправить отзыв</button>
           <span class="main-form__required-fields">* - Обязательные поля</span>
