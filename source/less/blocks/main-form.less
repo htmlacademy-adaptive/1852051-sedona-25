@@ -30,10 +30,12 @@
   margin-bottom: 53px;
 }
 
-.main-form__wrapper-submit {
-  width: 281px;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: @tablet-width) {
+  .main-form__wrapper-submit {
+    width: 281px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -56,10 +58,9 @@
     flex-wrap: wrap;
   }
 
-  .sights__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .main-form__wrapper-submit {
+    display: contents;
+    width: 324px;
   }
 }
 

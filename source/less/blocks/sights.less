@@ -6,8 +6,10 @@
 }
 
 .sights__list {
-  display: grid;
-  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sights__control-label {
@@ -32,4 +34,16 @@
   top: 15px;
   left: 14px;
   content: url("../img/form-img/check.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .sights__list {
+    margin-left: 84px;
+    margin-right: 84px;
+    margin-bottom: 16px;
+    display: grid;
+    min-width: 280px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
