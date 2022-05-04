@@ -3,12 +3,14 @@
 }
 
 .advantages__wrapper-attraction {
-  background-color: @text-color-white;
+  background-color: @color-white;
 }
 
 .advantages__wrapper-background-blue {
   background-color: @color-background;
-  color: @text-color-white;
+  color: @color-white;
+  position: relative;
+  z-index: 1;
 }
 
 .advantages__list .advantages__wrapper-background-blue .advantages__title {
@@ -58,7 +60,6 @@
   position: relative;
 }
 
-
 .advantages__wrapper-2 {
   display: flex;
   flex-direction: column;
@@ -95,9 +96,9 @@
   .advantages__wrapper-2 {
     order: 2;
   }
-  /* stylelint-disable */
-  .advantages__list .advantages__item:nth-child(4):before,
-  .advantages__list .advantages__item:nth-child(4):after {
+
+  .advantages__list .advantages__item:nth-child(4)::before,
+  .advantages__list .advantages__item:nth-child(4)::after {
     content: "";
     width: 284px;
     height: 2px;
@@ -109,7 +110,6 @@
     left: 0;
   }
 }
-/* stylelint-enable */
 
 @media (min-width: @tablet-width) {
   .advantages__list {

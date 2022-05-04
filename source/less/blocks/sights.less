@@ -1,0 +1,65 @@
+.sights__item {
+  position: relative;
+  margin-bottom: 36px;
+  width: 100%;
+  text-align: start;
+}
+
+.sights__list {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sights__control-label {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 700;
+  transform: translateX(62px);
+}
+
+.sights__control-mark {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 46px;
+  height: 45px;
+  background-color: @background-form-element;
+}
+
+.sights__control[type="checkbox"]:checked + .sights__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  content: url("../img/form-img/check.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .sights__list {
+    margin-left: 84px;
+    margin-right: 84px;
+    margin-bottom: 16px;
+    display: grid;
+    min-width: 280px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sights__title {
+    margin-bottom: 69px;
+  }
+
+  .sights__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 97px;
+  }
+
+  .sights__item {
+    margin: 0;
+  }
+}
