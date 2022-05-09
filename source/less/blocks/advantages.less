@@ -11,6 +11,9 @@
   color: @color-white;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .advantages__list .advantages__wrapper-background-blue .advantages__title {
@@ -66,31 +69,27 @@
 }
 
 .advantages__img-background-1 {
-  background-image: url("../img/mobile-img/photo-city1.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/mobile-img/photo-city1.jpg") no-repeat center;
   background-size: 100%;
   height: 260px;
 }
 
 @media (min-resolution: 2dppx) {
   .advantages__img-background-1 {
-    background-image: url("../img/mobile-img/photo-city@1x 1.png");
-    background-repeat: no-repeat;
+    background: url("../img/mobile-img/photo-city@1x 1.png") no-repeat center;
     background-size: 100%;
   }
 }
 
 .advantages__img-background-2 {
-  background-image: url("../img/mobile-img/photo-bridge.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/mobile-img/photo-bridge.jpg") no-repeat center;
   background-size: 100%;
   height: 260px;
 }
 
 @media (min-resolution: 2dppx) {
   .advantages__img-background-2 {
-    background-image: url("../img/mobile-img/photo-bridge@1x 1.png");
-    background-repeat: no-repeat;
+    background: url("../img/mobile-img/photo-bridge@1x 1.png") no-repeat center;
     background-size: 100%;
   }
 }
@@ -198,27 +197,25 @@
   }
 
   .advantages__img-background-1 {
-    background-image: url("../img/tablet-img/photo-city.png");
-    background-repeat: no-repeat;
+    background: url("../img/desktop-img/photo-city.png") no-repeat center;
+    background-size: 100%;
   }
 
   @media (min-resolution: 2dppx) {
     .advantages__img-background-1 {
-      background-image: url("../img/desktop-img/photo-city@2x.jpg");
-      background-repeat: no-repeat;
+      background: url("../img/desktop-img/photo-city@2x.jpg") no-repeat center;
       background-size: 100%;
     }
   }
 
   .advantages__img-background-2 {
-    background-image: url("../img/desktop-img/photo-bridge.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/desktop-img/photo-bridge.jpg") no-repeat center;
+    background-size: 100%;
   }
 
   @media (min-resolution: 2dppx) {
     .advantages__img-background-2 {
-      background-image: url("../img/desktop-img/pphoto-bridge@2x.jpg");
-      background-repeat: no-repeat;
+      background: url("../img/desktop-img/photo-bridge@2x.jpg") no-repeat center;
       background-size: 100%;
     }
   }
