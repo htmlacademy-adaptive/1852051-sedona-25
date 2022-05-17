@@ -29,6 +29,18 @@
   background-color: @background-form-element;
 }
 
+.sights__control-mark:hover {
+  background-color: @color-decor-line;
+}
+
+.sights__control-mark:active {
+  background-color: @input-down;
+}
+
+.sights__control-mark:active::before {
+  opacity: 30%;
+}
+
 .sights__control[type="checkbox"]:checked + .sights__control-mark::before {
   position: absolute;
   top: 15px;

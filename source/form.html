@@ -9,11 +9,16 @@
   <script src="js/index.js"></script>
 </head>
 <body class="page__body">
+<svg style="display:none">
+  <symbol id="html-logo" viewBox="0 0 27 35">
+    <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="currentColor"/>
+  </symbol>
+</svg>
 <header class="main-header">
   <a class="main-header__logo">
     <img class="main-header__logo-image" src="img/logotype-sedona.svg" width="185" height="96" alt="Sedona city">
   </a>
-  <div class="main-header__wrapper-form">
+  <div class="main-header__wrapper-form main-header__polygon">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -167,7 +172,7 @@
           <textarea type="text" class="state-description__input" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <div class="main-form__wrapper-submit">
-          <button class="main-form__submit button-page-form" type="submit">Отправить отзыв</button>
+          <button class="main-form__submit button-page-form" type="submit"><span>Отправить отзыв</span></button>
           <span class="main-form__required-fields">* - Обязательные поля</span>
         </div>
       </form>
@@ -216,9 +221,11 @@
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo" src="img/htmlacademy-logo.svg" alt="logo"/>
+        <p class="copyright__text">Разработано</p>
+        <svg width="27" height="35" fill="none">
+          <use href="#html-logo"></use>
+        </svg>
       </a>
     </div>
   </div>
