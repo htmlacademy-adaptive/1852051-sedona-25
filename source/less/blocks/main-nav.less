@@ -33,6 +33,18 @@
   box-shadow: 0 10px 0 0 @color-background, 0 20px 0 0 @color-background;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 4px;
+  right: 0;
+  background-color: #81b3d2;
+  box-shadow: 0 10px 0 0 @color-background, 0 20px 0 0 @color-background;
+  opacity: 50%;
+}
+
 .main-nav--opened .main-nav__toggle {
   background-color: transparent;
 

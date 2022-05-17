@@ -40,6 +40,18 @@
   border-radius: 50%;
 }
 
+.feedback-review__control-mark:hover {
+  background-color: @color-decor-line;
+}
+
+.feedback-review__control-mark:active {
+  background-color: @input-down;
+}
+
+.feedback-review__control-mark:active::before {
+  opacity: 30%;
+}
+
 @media (min-width: @tablet-width) {
   .feedback-review__list {
     display: flex;
