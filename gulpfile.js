@@ -4,17 +4,19 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('source/less/style.less', {sourcemaps: true})
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
 }
 
@@ -32,6 +34,13 @@ const server = (done) => {
   done();
 }
 
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgstore())
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('source/build/img'))
+}
+
 // Watcher
 
 const watcher = () => {
@@ -39,7 +48,6 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-
 export default gulp.series(
-  styles, server, watcher
+  styles, server, sprite, watcher
 );
