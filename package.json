@@ -47,6 +47,7 @@
   "dependencies": {
     "-": "^0.0.1",
     "D": "^1.0.0",
+    "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-svgmin": "^4.1.0"
   }

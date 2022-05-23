@@ -9,6 +9,7 @@ import rename from 'gulp-rename';
 import svgo from 'gulp-svgmin';
 import squoosh from 'gulp-libsquoosh';
 import webp from 'gulp-webp';
+import csso from 'gulp-csso';
 
 // Styles
 
@@ -19,6 +20,7 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
     .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
 }
