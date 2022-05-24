@@ -21,8 +21,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp",
+    "build": "gulp styles js fonts manifest favicon html sprite images webpjpg",
+    "start": "npm run build && gulp server",
     "store": "gulp sprite"
   },
   "browserslist": [
