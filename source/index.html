@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff" as="font"/>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font"/>
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font"/>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font"/>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="js/index.js"></script>
 </head>
@@ -25,11 +29,11 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item site-list__item--active-page"><a class="site-list__link" href="#">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
         </ul>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
         </ul>
@@ -51,7 +55,7 @@
 <main class="main-container-index">
   <section class="advantages">
     <div class="advantages__wrapper">
-      <ul class="advantages__list">
+      <ul class="advantages__list reset-list">
         <li class="advantages__item">
           <div class="advantages__wrapper-1">
             <div class="advantages__wrapper-2">
@@ -64,7 +68,7 @@
               </div>
             </div>
             <div class="advantages__wrapper-attraction">
-              <ul class="attraction">
+              <ul class="attraction reset-list">
                 <li class="attraction__item">
                   <p class="attraction__term">Жилье</p>
                   <p class="attraction__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -115,7 +119,7 @@
     <div class="visit-information__wrapper">
       <h3 class="visit-information__title">Заинтересовались?</h3>
       <p class="visit-information__text">Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие <br> предложения гостиниц в Седоне</p>
-      <button class="visit-information__button button-page-form"><a class="visit-information__data-link" href="#"><span>Найти гостиницу</span></a></button>
+      <a class="visit-information__data-link button-page-form" href="#"><span>Найти гостиницу</span></a>
     </div>
     <div class="visit-information__map"></div>
   </section>
